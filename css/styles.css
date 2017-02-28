@@ -1,0 +1,292 @@
+/*
+
+Colours:
+
+Light yellow:   #FFF653;
+Mid yellow:     #CEC441;
+
+Light grey:     #C6C6C6;
+Mid grey:       #AAAAAA;
+Dark grey:      #999999;
+
+*/
+
+/*******************
+  BASE SETUP
+*******************/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+}
+
+
+/*******************
+  FONT SETUP
+*******************/
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+.teasers-block h2,
+.strapline p {
+  font-family: 'Merriweather', serif;
+}
+
+a {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+
+/*******************
+  GENERAL SETUP
+*******************/
+
+html {
+  font-size: 20px;
+}
+
+.cta {
+  color: black;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: .7em 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.grey {
+  background-color: #C6C6C6;
+  border-bottom: 3px solid #999;
+}
+
+.yellow {
+  background-color: #FFF653;
+  border-bottom: 3px solid #CEC441;
+}
+
+.cta:hover {
+  border-bottom: 3px solid #333;
+}
+
+h3 {
+  margin: 15px 0 0 0;
+}
+/*******************
+  HEADER
+*******************/
+
+header {
+  background-color: black;
+  border-bottom: 5px solid #FFF653;
+  padding: 1em 0;
+}
+
+h1 {
+  color: #FFF653;
+  margin: 0;
+  font-size: 1.5rem;
+  float: left;
+}
+
+header nav {
+  float: right;
+}
+
+header ul {
+  margin-bottom: 0;
+}
+
+header li {
+  display: inline-block;
+  margin: 0 0.4em;
+}
+
+header li:nth-child(n+3) a {
+  text-transform: none;
+  font-family: 'Source Sans Pro'
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: #FFF653;
+}
+
+
+/*******************
+  STRAPLINE SETUP
+*******************/
+
+.strapline {
+  background-color: #C6C6C6;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.strapline p {
+  margin: 0;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+del {
+  color: #999;
+}
+
+ins {
+  text-decoration: none;
+  position: relative;
+}
+
+ins:before {
+  content: "";
+  height: 3px;
+  background-color: #FFF653;
+  width: 100%;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+
+/*******************
+  INTRO
+*******************/
+
+.intro {
+  background-image: url("../images/coworking.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.5em;
+}
+
+.intro-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-left: auto;
+  width: 350px;
+  padding: 1.5em;
+  /*box-shadow: 5px 5px 5px #888;*/
+}
+
+.intro-content h2 {
+  margin: 0;
+}
+
+.intro-content p {
+    line-height: 1.6;
+}
+
+
+/*******************
+  TEASERS
+*******************/
+
+.teasers {
+  padding: 1em 0;
+}
+
+.teasers ul {
+  padding: 0;
+  margin: 0;
+}
+
+.teasers-block {
+  border-right: 1px solid #C6C6C6;
+  list-style: none;
+  float: left;
+  width: 33.333333%;
+  padding: 0 1em;
+}
+
+.teasers-block:last-child {
+  border-right: none;
+}
+
+.teasers-block h2 {
+  font-size: 1.6em;
+  margin: 0.5em 0;
+}
+
+.teasers-block p {
+  line-height: 1.5;
+}
+
+
+/*******************
+  CARDS
+*******************/
+
+.profiles {
+  background-color: #C6C6C6;
+  padding: 0px 10px 10px 10px;
+}
+
+.card {
+  background-color: #fff;
+  float: left;
+  width: 23.5%;
+  padding: 10px;
+  list-style: none;
+  margin: 10px 0.75%;
+}
+
+.card:nth-child(4) {
+  margin-right: none;
+}
+
+/*still need to sort out how the image works*/
+li img {
+  width: 100%;
+}
+
+.skills {
+  list-style: none;
+  padding: 0px 0px 15px 0px;
+}
+
+.skills-title {
+  /*display: block;*/
+  float: left;
+  background-color: #666;
+  border-radius: 15px;
+  font-size: 16px;
+  color: #fff;
+  padding: 3px 10px;
+  margin: 5px 0 0 5px;
+}
+
+
+/*******************
+  FOOTER
+*******************/
+
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 1.3em 0;
+}
